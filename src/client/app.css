@@ -1,0 +1,5 @@
+@import url('./css/app.scss');
+
+.leaflet-container {
+  height: 360px;
+}

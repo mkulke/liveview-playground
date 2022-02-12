@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="csrf-token" content="<%= csrf_meta_tag %>" />
+		<title>LiveViewJS • Leaflet Map</title>
+		<link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" />
+		<link rel="stylesheet" href="app.css">
+	</head>
+	<body>
+		<section class="leafletmap" data-phx-main="true" data-phx-session="<%= session %>" data-phx-static="<%= statics %>" id="phx-<%= liveViewId %>">
+			<%- inner_content %>
+		</section>
+
+		<footer class="info">
+			<!-- Change this out with your name and url ↓ -->
+			<p>Created by <a href="https://github.com/mkulke">Magnus Kulke</a></p>
+		</footer>
+		<!-- Scripts here. Don't remove ↓ -->
+		<script defer type="text/javascript" src="liveview.js"></script>
+	</body>
+</html>
