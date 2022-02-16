@@ -115,7 +115,10 @@ export class MapLiveViewComponent
   render() {
     return html`
       <div id="leafletmap">
-        <leaflet-map lat="51.505" lng="8.1" />
+        <leaflet-map center="13.447265625,52.55859375" />
+          <leaflet-bbox sw="13.447265625,52.55859375" ne="13.4912109375,52.6025390625"/>;
+          <leaflet-bbox sw="13.4033203125,52.55859375" ne="13.447265625,52.6025390625"/>;
+        </leaflet-map>
       </div>
     `;
   }
